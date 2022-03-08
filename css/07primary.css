@@ -1,0 +1,514 @@
+body {
+ margin: 10px 10px;
+  }
+
+
+
+h1 {
+  width: 100%;
+  height: 134px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #ffaf49;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  padding-bottom: 0px;
+  margin: 0px 0px;
+  font-size: 32px;
+}
+
+h2.title {
+  text-align:center ;
+}
+
+.card>.box1>.bold1 {
+text-size-adjust: 1.4rem;
+text-decoration-color: #0e0e0e;
+text-align: center;
+font-size: 1.2rem;
+font-weight: 600;
+text-decoration: underline;
+}
+
+
+
+/* Navigation Bar_____________________________________ */
+
+#top >.nav {
+  display: flex;
+  list-style: none;
+  margin: 0px 0px;
+  padding:0px !important;
+  height: 200px;
+  background-color: black;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.nav li {
+  text-align: center;
+    }
+
+.nav a {
+  color:  white;
+  list-style: none;
+  text-decoration: none;
+  }
+  
+  .nav li a:hover{
+  text-decoration: underline;
+  }
+  
+  .nav li a.current {
+    color:ivory;
+    text-decoration: underline;
+  }
+
+
+/* body_______________________________________________ */
+  
+.hero-image img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  object-fit: fill;
+  width: 100%;
+  height: 80%;
+  object-fit:scale-down;
+   }
+
+
+
+
+.descreption {
+  font-size: .9rem;
+  padding-bottom: 6%;
+  text-align: center;
+  margin-right: 4px;
+  margin-left: 4px;
+ }
+
+.card>.buttonplacement {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+  /* Universal Buttons_______________________ */
+  
+
+  .button01 {
+    background-color: #ffaf49;
+    border:none;
+    color:black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .button01:hover{
+  background-color: black;
+  color: white;
+  }
+
+  .nav a {
+    color:  white;
+    list-style:  none;
+    text-decoration: none;
+  }
+    
+  .nav li a:hover{
+    text-decoration: underline;
+  }
+    
+  .nav li a.current {
+      color:ivory;
+      text-decoration: underline;
+  }
+    
+     
+       
+  
+    /* Footer of the whole page____________________________ */
+
+
+
+footer {
+  height:152px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  background-color: black;
+  margin-top: 80px;
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 7px;
+  font-size: .85rem;
+}
+
+ 
+footer>h3.white {
+  color: whitesmoke;
+}
+
+
+   
+
+/* Index Screeen-desktop***********_____________________________________ */
+
+
+
+
+@media screen and (min-width: 600px) {
+  .descreption {
+    text-align: left;
+    margin-right: 12px;
+  }
+   
+
+  #top >.nav {
+    display: flex;
+    list-style: none;
+    margin: 0px 0px;
+    height: 32px;
+    background-color: black;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+
+  .card>.box1>.bold1 {
+    margin-bottom: 20px;
+  }
+ 
+  .primary {
+ display: grid;
+ grid-template-columns: repeat(2, minmax(36%, 1fr));
+ grid-template-areas: 'header header'
+                       'image card'  
+                       'button button'
+                       'footer footer'; }
+
+  }                
+
+.head01 {grid-area: header;}
+.card {grid-area: card;}
+.hero-image {grid-area: image;}
+footer {grid-area: footer;}
+.buttonplacement {grid-area: button;}
+
+
+/* Media Screen- Ipad_____________________________________ */
+
+
+
+@media screen and (min-width: 768px) {
+  .descreption {
+    text-align: left;
+    margin-right: 12px;
+  }
+  
+
+   .card>.box1>.bold1 {
+    margin-bottom: 20px;
+  }
+}
+
+/* 01 Menu Order Page ***********_____________________ */
+
+  section.order_menu {
+    text-align: center;
+    background-color: #FAFAFA;
+    margin: 40px;
+    justify-content: center;
+  }
+  
+  
+  h2.heading_order{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .menu {
+    font-size: 1.0rem;
+    font-style: normal;
+  }
+
+  .descreption019 {
+    text-align: center;
+    font-style: italic;
+  }
+
+/* 02  Checkout/Payment Page ***********_____________________ */
+
+.wrapper019 {
+  text-align: center;
+  background-color: #FAFAFA;
+  margin: 2% 12% 5% 12%;
+  justify-content: center;
+}
+
+ h2#delivery {
+  background-color: white;
+  padding: 10px;
+  text-align: center
+  }
+  
+ h2#payment {
+  background-color: white;
+  padding: 10px;
+  text-align: center
+  }
+
+  h2#pickup {
+    background-color: white;
+    padding: 10px;
+    text-align: center
+    }
+
+
+
+input[type="email"]::placeholder {
+        text-align: center;
+}
+::-webkit-input-placeholder {
+        text-align: center;
+}
+
+:-moz-placeholder {
+  text-align: center;
+}
+
+
+.payment {
+background-color: #ffaf49; /* Orange */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.submit {
+  background-color: #ffaf49; /* Orange */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+
+.payment:hover{
+background-color: black;
+color: white;
+}
+
+.submit:hover{
+background-color: black;
+color: white;
+}
+
+
+a.delivery:hover{
+  background-color: #ffaf49; /* Orange */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a.delivery{
+  padding: 15px 32px;
+  background-color:#FAFAFA; 
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+a.pickup {
+  padding: 15px 32px;
+  background-color:#FAFAFA; 
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a.pickup:hover{
+  background-color: #ffaf49; /* Orange */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+/* 03 Inspiration Page ***********_____________________ */
+
+.wrapper018 {
+  text-align: center;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.highlight {
+text-decoration: underline;
+font-size: 102%;
+padding-top: 0px;
+margin-top: 0px;
+}
+
+ul.recipie li {
+  list-style-type:none;
+  font-style: italic;
+}
+
+ul.recipie {
+  padding: 0px 0px;
+}
+
+.para-soup {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-style:ridge;
+  margin-bottom: 50px;
+ 
+}
+
+.pumpkin {
+  font-size: 1.0rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.para013 {
+  margin-left: 0px;
+}
+
+.iframe-resp {
+   top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 350px;
+  border: none;
+}
+
+
+ @media screen and (min-width: 600px) {
+   .wrapper018 {
+   display: flex;
+   justify-content: center;
+   }
+
+   .box012 {
+   flex:1;
+   }
+
+   .para013 {
+   flex:1;
+   margin-left: 80px;
+   }
+ 
+}
+
+/* 04 Contact Page ***********_____________________ */
+
+.location {
+  width: 100%;
+  height: 98%;
+}
+
+.wrapper089 {
+  text-align: center;
+}
+
+.para087 {
+    margin-left: 0px;
+}
+
+/*.location:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+ /* -webkit-transform: scale(1.2); /* Safari 3-8 */
+ /* transform: scale(1.2); 
+}
+*/
+
+@media screen and (min-width: 600px) {
+  .wrapper089 {
+  display: flex;
+  justify-content: center;
+  }
+
+  .box088 {
+  flex:1;
+  }
+
+  .location {
+    width: 60%;
+    height: 62%;
+  }
+
+  .para087 {
+  flex:1;
+  margin-left: 0px;
+  text-align: left;
+  }
+
+}
+
+/* Recieved Page ***********_____________________ */
+.notification {
+  font-size: 1.0rem;
+}
+
+.wrapper009 {
+ text-align: center;
+ background-color:white;
+ padding: 10px 10px;
+}
+.received {
+  height: 100%;
+  width: 98%;
+}
+
+@media screen and (min-width: 600px) {
+
+    .received {
+    height: 30%;
+    width: 38%;
+  }
+  .wrapper009 {
+    text-align: center;
+    background-color:white;
+    }
+}
